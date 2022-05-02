@@ -1,0 +1,26 @@
+{% extends 'kzrap/layout.html' %}
+
+{% load kzrap_tags %}
+
+{% block title %}ТОП-5{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1 style="font-size: 70px">ТОП-5</h1>
+        <p>Аптаның топ-5 тректері:</p>
+
+        {% gettracks as tracks %}
+
+        {% for el in tracks %}
+
+            <div class="alert alert-success mt-2">
+
+                <h2>{{ el.title }}</h2>
+                <h4>{{ el.artist }}</h4>
+                <p>{{ el.description }}</p>
+            </div>
+
+        {% endfor %}
+    </div>
+{% endblock %}
+

@@ -1,0 +1,20 @@
+<!--{% if news2 %}
+    {% for el in news2 %}
+
+        <div class="alert alert-warning">
+            <h3>{{ el.title }}</h3>
+            <h5>{{ el.date }}</h5>
+            <p>{{ el.full_text }}</p>
+            <h5>{{ el.genre }}</h5>
+            <h5>{{ el.language }}</h5>
+            <h5>{{ el.author }}</h5>
+            <h5>{{ el.location }}</h5>
+
+            <a href="{% url 'news-detail' el.id %}" class="btn btn-warning">Tolygyrak</a>
+
+        </div>
+
+    {% endfor %}
+{% else %}
+    <p>You don't have articles!</p>
+{% endif %} -->

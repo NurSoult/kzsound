@@ -1,0 +1,81 @@
+body {
+    background: #950706;
+}
+aside {
+    float: left;
+    background: #181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+aside img {
+    width: 60px;
+    float: left;
+}
+aside .logo {
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: 4px;
+}
+aside h3 {
+    margin-top: 50px;
+    font-size: 28px;
+}
+aside ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+i {margin-right: 5px;}
+
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+}
+aside ul li:hover, aside ul a:hover {
+    color: #eb5959;
+    transform: scale(1.05);
+}
+.features {
+    float: left;
+    color: #fff;
+    margin-top: 70px;
+    text-align: center;
+    width: 75%;
+
+}
+.features h1 {
+    font-size: 50px;
+}
+.features p {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.alert-success, .alert-warning, .alert-info {
+    margin: 10px 20%;
+    text-align: center;
+}
+
+form {
+    margin-left: 27%;
+    width: 500px;
+    margin-top: 50px;
+}
+
+h2 {
+    margin-bottom: 60px;
+}
+.section-title {
+    margin-top: 34px;
+}
+.section-title img {
+    border-radius: 4%;
+}

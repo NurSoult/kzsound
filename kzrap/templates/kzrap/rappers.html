@@ -1,0 +1,25 @@
+{% extends 'kzrap/layout.html' %}
+
+{% load kzrap_tags %}
+
+
+{% block title %}Орындаушылар{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Орындаушылар</h1>
+        <p>KZ Sound әртістері:</p>
+
+        {% getrappers as rapper %}
+
+        {% for el in rapper %}
+             <div class="alert alert-warning mt-2">
+                <h3>{{ el.nick }}</h3>
+                <h2>{{ el.label }}</h2>
+                <p>{{ el.genre }}</p>
+                 <p>{{ el.tracks }}</p>
+            </div>
+        {% endfor %}
+
+    </div>
+{% endblock %}

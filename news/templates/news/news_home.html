@@ -1,0 +1,33 @@
+{% extends 'kzrap/layout.html' %}
+
+
+{% block title %}KZ Sound Жаңалықтары{% endblock %}
+
+{% block content %}
+
+    <div class="features">
+        <h1 style="font-size: 100px"><span style="color: red">KZ</span> RAP NEWS</h1>
+        <p>KZ SOUND Жаңалықтары</p>
+        <p style="margin-top: 50px; font-size:20px"></p>
+
+        {% for el in news %}
+
+        <div class="alert alert-warning">
+            <h3>{{ el.title }}</h3>
+            <h5>{{ el.date }}</h5>
+            <h6>{{ el.genre }}</h6>
+            <p>{{ el.full_text }}</p>
+            <h6>{{ el.language }}</h6>
+            <h4>{{ el.author }}</h4>
+            <p>{{ el.location }}</p>
+
+            <a href="{% url 'news-detail' el.id %}" class="btn btn-warning">Tolygyrak</a>
+
+        </div>
+
+    {% endfor %}
+
+    </div>
+
+
+{% endblock %}

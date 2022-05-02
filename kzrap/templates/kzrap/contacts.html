@@ -1,0 +1,26 @@
+{% extends 'kzrap/layout.html' %}
+
+{% load kzrap_tags %}
+
+{% block title %}Контактілер{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>КОНТАКТІЛЕР</h1>
+        <p>Contact us via Telegram</p>
+
+        {% getcontacts as contact %}
+
+        {% for el in contact %}
+
+            <div class="alert alert-info mt-2">
+                <h1>{{ el.surname }}</h1>
+                <h1>{{ el.name }}</h1>
+                <p style="font-size: 20px;">{{ el.telnumber }}</p>
+            </div>
+
+        {% endfor %}
+        <button class="btn btn-warning">t.me/nurga_lee</button>
+
+    </div>
+{% endblock %}
